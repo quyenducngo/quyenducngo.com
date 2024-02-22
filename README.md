@@ -1,2 +1,0 @@
-# quyenducngo.com
-Personal Portfolio
