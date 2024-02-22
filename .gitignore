@@ -1,7 +1,0 @@
-.DS_Store
-secrets.txt
-
-#this how you comment
-
-*.txt
-#means all files ending with .txt will be ignored
