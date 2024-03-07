@@ -9,6 +9,14 @@ body {
   background-color: #1a1a1a;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Adjusted to center the content between 2nd and 3rd quarters */
+}
+
 header {
   background-color: #333;
   text-align: center;
@@ -32,7 +40,6 @@ footer {
 footer p {
   margin: 5px 0;
   font-size: 14px; /* Adjusted font size */
-  
 }
 
 .contact, .myTime {
