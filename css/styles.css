@@ -1,5 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Montserrat as the primary font */
+  font-weight: 300; /* Thin font weight */
   margin: 0;
   padding: 0;
   display: flex;
@@ -12,7 +13,6 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   height: 50vh; /* Adjusted to center the content between 2nd and 3rd quarters */
 }
@@ -23,8 +23,17 @@ header {
   padding: 1em;
 }
 
-#about {
+#about, #socials {
+  width: 50%;
+  margin: 0 auto;
   padding: 20px;
+  box-sizing: border-box;
+}
+
+#socials a {
+  text-decoration: none; /* Remove default underline */
+  color: white; /* Set link color */
+  cursor: pointer; /* Change cursor on hover to indicate it's clickable */
 }
 
 footer {
