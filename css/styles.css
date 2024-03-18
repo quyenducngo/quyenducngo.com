@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif; /* Montserrat as the primary font */
+  /* font-family: 'Montserrat', sans-serif;  Add this line to match the font */
   font-weight: 300; /* Thin font weight */
   margin: 0;
   padding: 0;
@@ -81,11 +81,11 @@ hr.solid {
 }
 
 #socials h2 {
-  font-size: 18px; /* Adjust the font size for the "Socials" heading */
+  font-size: 24px; /* Adjust the font size for the "Socials" heading */
 }
 
 #about h2 {
-  font-size: 18px; /* Adjust the font size for the "About Me" heading */
+  font-size: 24px; /* Adjust the font size for the "About Me" heading */
 }
 
 /* Additional styling as needed */
