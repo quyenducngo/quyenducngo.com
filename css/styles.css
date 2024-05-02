@@ -1,91 +1,79 @@
+/* styles.css */
+
+/* Set background color to black and font color to white */
 body {
-  /* font-family: 'Montserrat', sans-serif;  Add this line to match the font */
-  font-weight: 300; /* Thin font weight */
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  background-color: black;
   color: white;
-  background-color: #1a1a1a;
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.wrapper {
+  max-width: 800px; /* Set maximum width for content */
+  width: 100%; /* Take full width of the viewport */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Align items in a column */
+  align-items: center; /* Center items horizontally */
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 50vh; /* Adjusted to center the content between 2nd and 3rd quarters */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  margin-top: 20px; /* Add margin to the top */
 }
 
-header {
-  background-color: #333;
+/* CSS styles for the headshot container */
+.headshot-container {
+  flex: 0 0 auto; /* Don't grow or shrink, maintain auto width */
+  margin-right: 20px; /* Add margin for spacing */
+}
+
+/* CSS styles for the headshot image */
+.headshot-image {
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; /* Make the height the same as the width for a squared-off image */
+  object-fit: cover; /* Ensure the image covers the entire space */
+}
+
+/* CSS styles for the blurb */
+.blurb {
+  flex: 1; /* Grow to fill remaining space */
+}
+
+/* Style "Hello, I'm" in grey */
+.blurb p span.gray {
+  color: #808080; /* Grey color */
+}
+
+/* Style "JIMMY NGO" in white, bold, and larger font */
+.blurb p span.white-bold {
+  color: white;
+  font-weight: bold;
+  font-size: 24px; /* Adjust the font size as needed */
+}
+.buttons {
+  margin-top: 20px; /* Add margin for spacing */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center align buttons */
+}
+
+.button {
+  margin-right: 10px; /* Add margin between buttons */
+  padding: 10px 20px; /* Add padding to buttons */
+  background-color: #4CAF50; /* Green background color */
+  color: white;
+  border: none;
   text-align: center;
-  padding: 1em;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  font-family: Arial, sans-serif; /* Add font-family */
 }
 
-#about, #socials {
-  width: 50%;
-  margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
+.button:hover {
+  background-color: #45a049; /* Darker green background color on hover */
 }
-
-#socials a {
-  text-decoration: none; /* Remove default underline */
-  color: white; /* Set link color */
-  cursor: pointer; /* Change cursor on hover to indicate it's clickable */
-  padding: 5px; /* Add padding around each social icon */
-}
-
-footer {
-  background-color: #333; /* Adjusted to match the header color */
-  color: #ddd; /* Light grey font color */
-  padding: 10px;
-  margin-top: auto;
-  display: flex;
-  justify-content: space-between;
-  background-color: #1a1a1a;
-}
-
-footer p {
-  margin: 5px 0;
-  font-size: 12px; /* Adjusted font size */
-}
-
-.contact, .myTime {
-  text-align: left;
-}
-
-#myTime {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-#myTime span {
-  margin-top: 5px;
-}
-
-#myTime i {
-  margin-right: 5px;
-}
-
-#about p {
-  font-size: 14px; /* Adjusted font size for paragraphs in the About Me section */
-}
-
-hr.solid {
-  height: 0.1px; /* Set the height to make it thinner */
-  background-color: white; /* Optional: Set the color of the line */
-  margin: 1px 0; /* Optional: Add margin for spacing */
-}
-
-#socials h2 {
-  font-size: 24px; /* Adjust the font size for the "Socials" heading */
-}
-
-#about h2 {
-  font-size: 24px; /* Adjust the font size for the "About Me" heading */
-}
-
-/* Additional styling as needed */
