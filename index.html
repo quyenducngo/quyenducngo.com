@@ -8,29 +8,65 @@
 </head>
 <body>
   <div class="wrapper">
-    <div class="headshot-container">
-      <img src="/headshot.jpg" alt="Jimmy's Headshot" class="headshot-image">
+    <div class="hero">
+      <div class="headshot-container">
+        <img src="/headshot.jpg" alt="Jimmy's Headshot" class="headshot-image">
+      </div>
+      
+      <div class="content">
+        <div class="blurb">
+          <p><span class="gray">Hey there, I'm</span></p>
+          <p><span class="white-bold">JIMMY NGO</span></p>
+          <p>I specialize in QA and documentation, helping teams build comprehensive guides and handbooks for smooth onboarding and education. Let's work together to create exceptional user experiences and reliable software!</p>    
+        </div>
+        <div class="buttons">
+          <a href="blog.html" class="button">Blog</a>
+          <a href="case_studies.html" class="button">Case Studies</a>
+          <a href="https://www.upwork.com/freelancers/~01ac1ca34bba547b4e?viewMode=1&s=1313512633755545600" class="button">Upwork</a>
+        </div>
+      </div>
     </div>
-    
-    <div class="content">
-      <div class="blurb">
-        <p><span class="gray">Hello, I'm</span></p>
-        <p><span class="white-bold">JIMMY NGO</span></p>
-        <p>With extensive experience in documentation, early development, and automation, I ensure software reliability— Let's enhance your solutions for exceptional user experiences.</p>    
+
+    <!-- Services Section -->
+    <div class="services">
+      <h2>Services</h2>
+      <div class="services-grid">
+        <div class="service-item">
+          <img src="icons/qa.svg" alt="QA Testing" class="service-icon">
+          <h3>Quality Assurance Testing</h3>
+          <p>Ensure your software is bug-free and runs smoothly with thorough QA testing.</p>
+        </div>
+        <div class="service-item">
+          <img src="icons/documentation.svg" alt="Documentation Creation" class="service-icon">
+          <h3>Documentation Creation</h3>
+          <p>Create comprehensive documentation to help users understand and use your software effectively.</p>
+        </div>
+        <div class="service-item">
+          <img src="icons/onboarding.svg" alt="Onboarding Guides" class="service-icon">
+          <h3>Onboarding Guides</h3>
+          <p>Develop easy-to-follow onboarding guides to ensure a smooth start for new users.</p>
+        </div>
+        <div class="service-item">
+          <img src="icons/automation.svg" alt="Automation Scripts" class="service-icon">
+          <h3>Automation Scripts</h3>
+          <p>Automate repetitive tasks with custom scripts to save time and increase efficiency.</p>
+        </div>
       </div>
-      <div class="buttons">
-        <button class="button" onclick="openCalendar()">Lets Chat</button>
-        <a href="blog.html" class="button">Blog</a>
-        <a href="qa_reviewed.html" class="button">QA Reviewed</a>
-        <a href="https://www.upwork.com/freelancers/~01ac1ca34bba547b4e?viewMode=1&s=1313512633755545600" class="button">Upwork</a>
-      </div>
+    </div>
+
+    <!-- Social Media Links Section -->
+    <div class="social-media">
+      <h2>Connect with Me</h2>
+      <a href="https://www.linkedin.com/in/quyenducngo/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/quyenducngo" target="_blank">GitHub</a> |
+      <a href="#" onclick="openCalendar()">Connect</a>
     </div>
   </div>
 
   <script>
     function openCalendar() {
       var calendarLink = "https://calendar.app.google/VjcW4WucCp8i3uzA7";
-      window.open(calendarLink, "blank");
+      window.open(calendarLink, "_blank");
     }
   </script>
 </body>
